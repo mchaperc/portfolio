@@ -4,17 +4,17 @@ body, html {
 
 @font-face {
   font-family: 'Quicksand';
-  src: url('fonts/quicksand/Quicksand-Regular.otf');
+  src: url('../fonts/quicksand/Quicksand-Regular.otf');
 }
 
 @font-face {
   font-family: "Quicksand-Bold";
-  src: url("fonts/quicksand/Quicksand-Bold.otf");
+  src: url("../fonts/quicksand/Quicksand-Bold.otf");
 }
 
 @font-face {
   font-family: "Quicksand-Light";
-  src: url("fonts/quicksand/Quicksand-Light.otf");
+  src: url("../fonts/quicksand/Quicksand-Light.otf");
 }
 
 li {
@@ -25,19 +25,28 @@ a {
   text-decoration: none;
 }
 
+* {
+  outline: none;
+}
+
 section {
   position: relative;
   top: 0;
 }
 
+.container .fa {
+  margin-right: 5px;  
+}
+
 button {
-  padding: .4em;
-  font-size: 1em;
+  padding: .2em;
+  font-size: 1.1em;
   border-radius: 5px;
   border-style: none;
-  font-family: Quicksand-Light;
-  background: linear-gradient(black, silver, lightgrey);
-  color: white;
+  font-family: 'Quicksand-Light';
+  color: black;
+  background-color: white;
+  border: 3px solid orange;
   position: relative;
   margin: 0 auto;
   margin-right: 3em;
@@ -45,8 +54,8 @@ button {
 }
 
 button:hover {
-  box-shadow: inset 0 0 2px black;
-  background: linear-gradient(orange, white);
+  background-color: rgba(0, 0, 0, .6);
+  color: white;
   cursor: pointer;
 }
 
@@ -91,7 +100,6 @@ Navbar
   display: inline;
   padding: .7em;
   top: 1.7em;
-  /*font-size: 1.5em;*/
   border-style: none;
   color: black;
   border-radius: 15px;
@@ -108,6 +116,10 @@ Section 1 Styling
 
 .parallax-1 {
   text-align: center;
+}
+
+.parallax-1 h1 {
+  display: none;
 }
 
 .legible {
@@ -133,6 +145,42 @@ Section 1 Styling
 Section 2 Styling
 *****************************/
 
+#gallery {
+  position: relative;
+  margin: 0 auto;
+  top: -2em;
+  right: 2.5em;
+}
+
+#gallery h2 {
+  font-size: 1.5em;
+  font-family: 'Roboto Slab';
+  margin: 0;
+}
+
+#gallery li {
+  display: block;
+  padding: 1em;
+  margin: 2em;
+  width: 16em;
+  background-color: rgba(235, 235, 235, 0.85);
+  border-radius: 10px;
+}
+
+#gallery img {
+  height: 130px;
+  width: 200px;
+  border: 1px solid black;
+  margin: 0 auto;
+  position: relative;
+  left: 2em;
+}
+
+#gallery li:hover {
+  background-color: rgba(0, 0, 0, .6);
+  color: orange;
+}
+
 /*****************************
 Section 3 Styling
 *****************************/
@@ -143,20 +191,41 @@ Footer
 
 .contact-links li {
   display: block;
-  margin: 0 auto;
-  float: left;
-  left: 1em;
-  right: 2em;
-  list-style: none;
-  color: orange;
-  height: 60px;
-  width: 60px;
-  padding: 2em;
+  padding: .6em;
+  font-size: 1.1em;
+  border-radius: 5px;
+  border-style: none;
+  font-family: 'Quicksand-Light';
+  color: black;
+  background-color: white;
+  border: 3px solid orange;
   position: relative;
+  left: 5em;
+  margin-right: 3em;
+  width: 2.5em;
+}
+
+.contact-links li .fa {
+  position: relative;
+  top: 5px;
+  left: 5px;
+}
+
+.contact-links li:hover {
+  background-color: lightgray;
+  cursor: pointer;
+}
+
+.contact-links a:hover {
+  color: white;
 }
 
 .contact-links a:visited {
-  color: orange;
+  color: black;
+}
+
+.footer p {
+  text-align: center;
 }
 
 /* ============================================================
@@ -245,7 +314,7 @@ section.module.parallax h1 {
 }
 
 section.module.parallax-1 {
-  background-image: url("img/old-music.jpg");
+  background-image: url("../img/old-music.jpg");
 }
 section.module.parallax-2 {
   background-image: url("http://www.wallpaperup.com/uploads/wallpapers/2014/04/29/346133/0db2c41b85ad1187bdeabb18f976cd40.jpg");
@@ -272,8 +341,15 @@ section.module.parallax-3 {
     font-size: 1.2em;
     padding: 1em;
   }
-  .contact-links {
-    display: block;
+  .contact-links li {
+    left: 20%;
+    display: inline;
+  }
+  #gallery {
+    left: 5em;
+  }
+  #gallery li {
+    display: inline-block;
   }
 }
 @media all and (min-width: 960px) {
@@ -287,18 +363,20 @@ section.module.parallax-3 {
     height: 650px;
   }
   .main-nav li {
-    top: 1.2em;
+    top: 24px;
     font-size: 1.4em;
-    padding: 1.40em;
+    padding: 1.45em;
     border-radius: 0px;
     right: -7px;
   }
   .navbar .fa {
     left: 1.7em;
   }
-  .contact-links {
-    display: inline;
-    left: 2em;
-    right: 2em;
+  .contact-links li {
+    left: 25%;
+  }
+  #gallery li {
+    display: inline-block;
+    width: 17em;
   }
 }
