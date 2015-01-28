@@ -161,8 +161,10 @@ Section 2 Styling
 #gallery li {
   display: block;
   padding: 1em;
-  margin: 2em;
+  margin: 0 auto;
+  margin-bottom: 2em;
   width: 16em;
+  height: 25em;
   background-color: rgba(235, 235, 235, 0.85);
   border-radius: 10px;
 }
@@ -173,7 +175,7 @@ Section 2 Styling
   border: 1px solid black;
   margin: 0 auto;
   position: relative;
-  left: 2em;
+  left: 1.8em;
 }
 
 #gallery li:hover {
@@ -349,7 +351,16 @@ section.module.parallax-3 {
     left: 5em;
   }
   #gallery li {
+    width: 300px;
+    height: 370px;
+    margin: 2em;
+    position: relative;
     display: inline-block;
+    left: -2em;
+  }
+  #gallery li:nth-child(3) {
+  position: relative;
+  top: -2.5em;
   }
 }
 @media all and (min-width: 960px) {
@@ -374,9 +385,5 @@ section.module.parallax-3 {
   }
   .contact-links li {
     left: 25%;
-  }
-  #gallery li {
-    display: inline-block;
-    width: 17em;
   }
 }
