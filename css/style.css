@@ -362,6 +362,9 @@ section.module.parallax-3 {
   position: relative;
   top: -2.5em;
   }
+  #gallery img {
+    left: 3em;
+  }
 }
 @media all and (min-width: 960px) {
   section.module.parallax h1 {
