@@ -218,6 +218,10 @@ Footer
   cursor: pointer;
 }
 
+.contact-links a {
+  color: blac;
+}
+
 .contact-links a:hover {
   color: white;
 }
@@ -242,6 +246,7 @@ Footer
 h1 { 
   position: relative;
   top: 1em;
+  font-family: 'Droid Serif', serif;
 }
 
 h1:nth-child(2), h1:last-child {
@@ -352,7 +357,7 @@ section.module.parallax-3 {
   }
   #gallery li {
     width: 300px;
-    height: 370px;
+    padding: 1em;
     margin: 2em;
     position: relative;
     display: inline-block;
