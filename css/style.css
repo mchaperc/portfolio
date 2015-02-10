@@ -209,6 +209,11 @@ Section 2 Styling
   transition: all .8s ease;
 }
 
+#gallery li:nth-child(8) {
+  position: relative;
+  top: 3.3em;
+}
+
 #gallery img {
   height: 130px;
   width: 200px;
