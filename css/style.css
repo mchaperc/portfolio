@@ -41,7 +41,7 @@ section {
 button {
   padding: .2em;
   font-size: 1.1em;
-  border-radius: 5px;
+  border-radius: 10px;
   border-style: none;
   font-family: 'Quicksand-Light';
   color: black;
@@ -51,12 +51,25 @@ button {
   margin: 0 auto;
   margin-right: 3em;
   margin-top: 1em;
+  transition: all 0.8s ease;
+  position: relative;
+}
+
+.music {
+  padding: 1em;
+}
+
+.hobbies {
+  padding: 1em .7em;
 }
 
 button:hover {
-  background-color: rgba(0, 0, 0, .6);
+  background-color: #6ec5b8;
   color: white;
+  border: 3px solid white;
+  box-shadow: 0 0 5px black;
   cursor: pointer;
+  border-radius: 50%;
 }
 
 /*****************************
@@ -80,10 +93,11 @@ Navbar
   left: .5em;
   top: .15em;
   color: orange;
+  transition: all .8s ease;
 }
 
-.navbard .fa:hover {
-  color: black;
+.navbar .fa:hover {
+  color: rgba(0, 0, 0, .6);
 }
 
 .main-nav {
@@ -103,6 +117,7 @@ Navbar
   border-style: none;
   color: black;
   border-radius: 15px;
+  transition: all .8s ease;
 }
 
 .main-nav li:hover {
@@ -119,7 +134,31 @@ Section 1 Styling
 }
 
 .parallax-1 h1 {
-  display: none;
+  position: relative;
+  top: 1.5em;
+}
+
+#me {
+  height: 180px;
+  width: 180px;
+  border-radius: 50%;
+  box-shadow: 0 0 2px black;
+  border: 3px solid white;
+  position: absolute;
+  left: 24%;
+  top: 17em;
+  margin: 2em;
+  clear: both;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  transition: all .8s ease;
+}
+
+#me:hover {
+  border: 3px solid white;
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+  box-shadow: 0 0 10px black;
 }
 
 .legible {
@@ -166,7 +205,8 @@ Section 2 Styling
   width: 16em;
   height: 25em;
   background-color: rgba(235, 235, 235, 0.85);
-  border-radius: 10px;
+  border-radius: 15px;
+  transition: all .8s ease;
 }
 
 #gallery img {
@@ -179,8 +219,12 @@ Section 2 Styling
 }
 
 #gallery li:hover {
-  background-color: rgba(0, 0, 0, .6);
-  color: orange;
+  background-color: #6ec5b8;
+  color: white;
+  box-shadow: 0 0 5px gray;
+  border-radius: 0;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
 }
 
 /*****************************
@@ -192,34 +236,45 @@ Footer
 ***************************/
 
 .contact-links li {
-  display: block;
-  padding: .6em;
+  padding: .9em .2em;
   font-size: 1.1em;
-  border-radius: 5px;
+  border-radius: 50%;
   border-style: none;
   font-family: 'Quicksand-Light';
   color: black;
-  background-color: white;
-  border: 3px solid orange;
   position: relative;
-  left: 5em;
+  margin: 0 auto;
   margin-right: 3em;
-  width: 2.5em;
+  margin-top: 1em;
+  border: 3px solid white;
+  box-shadow: 0 0 3px gray;
+  transition: all 0.8s ease;
+  display: block;
+  width: 15%;
+  right: 35%;
 }
 
 .contact-links li .fa {
   position: relative;
-  top: 5px;
-  left: 5px;
+  left: 20%;
+  color: black;
 }
 
+.contact-links li .fa:nth-child(2) {
+  left: 50%;
+} 
+
 .contact-links li:hover {
-  background-color: lightgray;
+  background-color: #6ec5b8;
+  color: white;
+  border: 3px solid white;
+  box-shadow: 0 0 5px black;
   cursor: pointer;
+  border-radius: 15px;
 }
 
 .contact-links a {
-  color: blac;
+  color: black;
 }
 
 .contact-links a:hover {
@@ -330,6 +385,7 @@ section.module.parallax-3 {
   background-image: url("http://p1.pichost.me/i/44/1674639.jpg");
 }
 
+
 @media all and (min-width: 600px) {
   section.module h2 {
     font-size: 42px;
@@ -345,12 +401,9 @@ section.module.parallax-3 {
   }
   .main-nav li {
     top: 1.5em;
+    width: 50%;
     font-size: 1.2em;
     padding: 1em;
-  }
-  .contact-links li {
-    left: 20%;
-    display: inline;
   }
   #gallery {
     left: 5em;
@@ -369,6 +422,20 @@ section.module.parallax-3 {
   }
   #gallery img {
     left: 3em;
+  }
+  .contact-links li .fa {
+    top: 5px;
+    left: 5px;
+  }
+  .contact-links li{
+    display: inline;
+    left: 25%;
+  }
+  #me {
+    height: 250px;
+    width: 250px;
+    left: 30%;
+    top: 28em;
   }
 }
 @media all and (min-width: 960px) {
@@ -392,6 +459,38 @@ section.module.parallax-3 {
     left: 1.7em;
   }
   .contact-links li {
-    left: 25%;
+    left: 20%;
+  }
+  .contact-links li {
+    padding: .2em;
+    font-size: 1.1em;
+    color: black;
+    position: relative;
+    margin: 0 auto;
+    margin-right: 3em;
+    margin-top: 1em;
+    left: 15%;
+    display: inline;  }
+
+  .contact-links li:first-child {
+    padding: 2em 1.4em;
+  }
+
+  .contact-links li:nth-child(2) {
+    padding: 2em 1.5em;
+  }
+
+  .contact-links li:nth-child(3) {
+    padding: 2em 1.8em;
+  }
+
+  .contact-links li:last-child {
+    padding: 2em 1.6em;
+  }
+  #me {
+    height: 300px;
+    width: 300px;
+    left: 35%;
+    top: 29em;
   }
 }
