@@ -14,7 +14,13 @@ var ct = $("#rotate").data("term") || 0;
 $(rotateTerm);
 
 $(document).ready(function () {
-	$('.parallax-1 h1').fadeIn(2000);
+	$(document).scroll(function() { 
+   if($(window).scrollTop() === 0) {
+     $(".navbar .fa").fadeOut(500);
+   } else {
+    $('.navbar .fa').fadeIn(500);
+   }
+});
 });
 
 $(function() {

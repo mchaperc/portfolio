@@ -88,6 +88,7 @@ Navbar
 }
 
 .navbar .fa {
+  display: none;
   position: relative;
   margin: 0 auto;
   left: .5em;
@@ -209,10 +210,10 @@ Section 2 Styling
   transition: all .8s ease;
 }
 
-#gallery li:nth-child(6) {
+/*#gallery li:nth-child(6) {
   -webkit-position: relative;
   top: -1.4em;
-}
+}*/
 
 #gallery li:nth-child(8) {
   position: relative;
