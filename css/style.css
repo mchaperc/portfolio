@@ -179,6 +179,10 @@ Section 1 Styling
   overflow: scroll;
 }
 
+.music-window h2, .more-window h2 {
+  text-align: center;
+}
+
 .fa-times {
   position: relative;
   padding: .5em;
