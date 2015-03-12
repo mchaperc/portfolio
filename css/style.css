@@ -236,7 +236,37 @@ Section 2 Styling
 
 #gallery li:nth-child(8) {
   position: relative;
-  top: 2em;
+  top: 3.4em;
+}
+
+#gallery li:nth-child(10) {
+  position: relative;
+  top: -4.1em;
+}
+
+#gallery li:nth-child(1) img {
+  position: relative;
+  top: 4em;
+}
+
+#gallery li:nth-child(2) img {
+  position: relative;
+  top: 4em;
+}
+
+#gallery li:nth-child(3) img {
+  position: relative;
+  top: 2.5em;
+}
+
+#gallery li:nth-child(7) img {
+  position: relative;
+  top: 3em;
+}
+
+#gallery li:nth-child(10) img {
+  position: relative;
+  top: 4.1em;
 }
 
 #gallery img {
