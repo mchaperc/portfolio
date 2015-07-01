@@ -73,6 +73,14 @@ button:hover {
   border-radius: 50%;
 }
 
+a.iron-yard {
+  color: orange;
+}
+
+a.iron-yard:visited {
+  color: orange; 
+}
+
 /*****************************
 Navbar
 *****************************/
@@ -204,81 +212,44 @@ Section 1 Styling
 Section 2 Styling
 *****************************/
 
-#gallery {
+.gallery {
+  padding: 0;
   position: relative;
   margin: 0 auto;
+  text-align: center;
   top: -2em;
-  right: 2.5em;
 }
 
-#gallery h2 {
+.gallery h2 {
   font-size: 1.5em;
   font-family: 'Roboto Slab';
   margin: 0;
 }
 
-#gallery li {
-  display: block;
+.gallery li {
+  display: inline-block;
   padding: 1em;
-  margin: 0 auto;
+  margin: auto;
   margin-bottom: 2em;
-  width: 16em;
-  height: 25em;
+  width: 80%;
+  /*height: 25em;*/
   background-color: rgba(235, 235, 235, 0.85);
   border-radius: 15px;
+  text-align: center;
   transition: all .8s ease;
 }
 
-/*#gallery li:nth-child(6) {
-  -webkit-position: relative;
-  top: -1.4em;
-}*/
-
-#gallery li:nth-child(8) {
-  position: relative;
-  top: 3.4em;
+.gallery li h2 {
+  font-size: .7em;
 }
 
-#gallery li:nth-child(10) {
-  position: relative;
-  top: -4.1em;
-}
-
-#gallery li:nth-child(1) img {
-  position: relative;
-  top: 4em;
-}
-
-#gallery li:nth-child(2) img {
-  position: relative;
-  top: 4em;
-}
-
-#gallery li:nth-child(3) img {
-  position: relative;
-  top: 2.5em;
-}
-
-#gallery li:nth-child(7) img {
-  position: relative;
-  top: 3em;
-}
-
-#gallery li:nth-child(10) img {
-  position: relative;
-  top: 4.1em;
-}
-
-#gallery img {
-  height: 130px;
-  width: 200px;
+.gallery img {
+  width: 80%;
   border: 1px solid black;
-  margin: 0 auto;
-  position: relative;
-  left: 1.8em;
+  /*margin-left: 10%;*/
 }
 
-#gallery li:hover {
+.gallery li:hover {
   background-color: #6ec5b8;
   color: white;
   box-shadow: 0 0 5px gray;
@@ -402,11 +373,6 @@ section.module h2 {
   font-family: "Roboto Slab", serif;
   font-size: 30px;
 }
-/*section.module p {
-  margin-bottom: 40px;
-  font-size: 16px;
-  font-weight: 300;
-}*/
 section.module p:last-child {
   margin-bottom: 0;
 }
@@ -448,7 +414,7 @@ section.module.parallax-3 {
 }
 
 
-@media all and (min-width: 600px) {
+@media all and (min-width: 760px) {
   section.module h2 {
     font-size: 42px;
   }
@@ -467,23 +433,10 @@ section.module.parallax-3 {
     font-size: 1.2em;
     padding: 1em;
   }
-  #gallery {
-    left: 5em;
-  }
-  #gallery li {
-    width: 300px;
-    padding: 1em;
-    margin: 2em;
-    position: relative;
-    display: inline-block;
-    left: -2em;
-  }
-  #gallery li:nth-child(3) {
-  position: relative;
-  top: -2.5em;
-  }
-  #gallery img {
-    left: 3em;
+  .gallery li {
+    margin: 2%;
+    width: 40%;
+    vertical-align: top;
   }
   .contact-links li .fa {
     top: 5px;
@@ -500,7 +453,7 @@ section.module.parallax-3 {
     top: -10em;
   }
 }
-@media all and (min-width: 960px) {
+@media all and (min-width: 1080px) {
   section.module.parallax h1 {
     font-size: 6em;
   }
@@ -554,5 +507,9 @@ section.module.parallax-3 {
     width: 300px;
     left: 35%;
     top: -11em;
+  }
+  .gallery li {
+    margin: 2.25%;
+    width: 25%;
   }
 }
