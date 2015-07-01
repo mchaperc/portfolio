@@ -212,6 +212,14 @@ Section 1 Styling
 Section 2 Styling
 *****************************/
 
+.gallery-container {
+  text-align: center;
+}
+
+.portfolio-text {
+  margin-bottom: 4em;
+}
+
 .gallery {
   padding: 0;
   position: relative;
