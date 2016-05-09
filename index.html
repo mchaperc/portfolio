@@ -35,26 +35,24 @@
       <img src="img/me.png" alt="Matt Chastain" id="me">
         <h2>About Me</h2>
         <p>Hi! Thanks for visiting my portfolio. First, a little about me:</p>
-        <p>Prior to fully committing to beginning my journey as a Front-End Engineer, I spent the 12 years teaching music in various forms and capacities, with the last 5 of those having been full-time. Since then, I've done about a year of self-study that has culminated with my, much anticipated, graduation from <a class="iron-yard" href="http://theironyard.com">The Iron Yard</a> on July 24th. Now, I'm ready to take the creativity that fostered my love for music and redirect it toward new endeavors in technology.</p>
+        <p>Prior to fully committing to beginning my journey as a Front-End Engineer, I spent the last 12 years teaching music in various forms and capacities, with the last 5 of those having been full-time. I spent a year in self-study, attended <a href="www.theironyard.com">The Iron Yard</a>, and have been working with BenefitFocus since August 2015. In the meantime, I've also Co-Founded Software Juice, LLC, which specializes in custom web-apps and software.</p>
         <p>Skillset:</p>
         <ul class="skills">
           <li>HTML5</li>
           <li>CSS3</li>
-          <li>JavaScript</li>
-          <li>jQuery</li>
-          <li>Underscore</li>
+          <li>JavaScript (ES6)</li>
+          <li>Node</li>
           <li>Bootstrap</li>
           <li>Bourbon</li>
           <li>Neat</li>
-          <li>SCSS</li>
-          <li>Backbone</li>
+          <li>CSS pre-processors (SASS, SCSS, LESS)</li>
+          <li>Backbone - Marionette</li>
           <li>Angular</li>
           <li>Ember</li>
-          <li>BAAS (Parse)</li>
+          <li>Dust</li>
           <li>Handlebars</li>
-          <li>Gulp</li>
-          <li>Babel (ES6)</li>
-          <li>Currently learning Ruby/Rails in "down time"</li>
+          <li>Gulp/Grunt</li>
+          <li>Dabbled with Java, Python, and Ruby</li>
         </ul>
         <p>If you're dying to know more about me or would like to hear a few of the pieces I've written for my ensembles, click the buttons below!</p>
         <ul class="btn">
@@ -85,7 +83,7 @@
           <p>I'm an avid mountain biker (when work allows!). I first started riding about 5 years ago and have been in love ever since. My current "whip" is a Scott Spark 940.</p>
           <p>When I'm not working or riding my bike, I also thoroughly enjoy games of all kinds. I've been known to design my own games when the ones I've got become boring (my first foray into coding came from designing my own MUD back in high school). Video games, board games, card games, etc... They're all great!</p>
           <h3>Family:</h3>
-          <p>I married my beautiful and talented wife coming up on 2 years ago this summer. We also have a terrific dog who loves to mountain bike (well, technically she's running, but she doesn't have to know that...), play fetch with anything you'll throw, and watch me play video games.</p>
+          <p>I married my beautiful and talented wife coming up on 3 years ago this summer. We also have a terrific dog who loves to mountain bike (well, technically she's running, but she doesn't have to know that...), play fetch with anything you'll throw, and watch me play video games.</p>
         </div>
         <audio id="theRight" src="sounds/theRight.m4a">
         <audio id="among" src="sounds/among.m4a">
@@ -102,26 +100,11 @@
       <div class="gallery-container container">
         <h2 class="portfolio-pre-iron-yard">Pre Iron Yard</h2>
         <p class="portfolio-text">Here is a small sampling of projects I completed prior to enrolling at <a class="iron-yard" href="http://theironyard.com">The Iron Yard</a>.</p>
-        <ul class="gallery">          
-          <li>
-            <h2>Etch-a-Sketch:</h2>
-            <p>An exercise in basic JavaScript and jQuery, it replicates the childhood toy that could be used to create very pixelated drawings. Utilizes HTML5, JavaScript, and jQuery.</p>
-            <a href="http://mchaperc.github.io/etch-a-sketch"><img src="img/etch-a-sketch.png" alt="Shopping List"></a>
-          </li>
+        <ul class="gallery">
           <li>
             <h2>Shopping List:</h2>
             <p>Much as it sounds, this project was intended to be a simple app for storing a grocery list, as well as allowing the user to generate a rough estimate for the cost of a shopping trip.  Utilizes HTML5, CSS3, Bootstrap, JavaScript, and jQuery.</p>
             <a href="http://mchaperc.github.io/shopping-list"><img src="img/shopping-list.png" alt="Shopping List"></a>
-          </li>
-          <li>
-            <h2>FizzBuzz:</h2>
-            <p>Just a little creation to display basic JavaScript programming knowledge. The point of the "game" is to enter a maximum number, then the program will print Fizz for numbers divisible by 3, Buzz for numbers divisible by 5, FizzBuzz for numbers divisible by both, and the number if it isn't divisible by either. Utilizes HTML5, CSS3, JavaScript, and jQuery.</p>
-            <a href="http://mchaperc.github.io/fizzbuzz-refactor"><img src="img/fizzbuzz.png" alt="FizzBuzz"></a>
-          </li>
-          <li>
-            <h2>Hot or Cold Game:</h2>
-            <p>This game asks for an input between 1 and 100. It will then randomly generate a number and check the accuracy of your guess. It will provide feedback based on your proximity to the generated number while keeping track of already guessed numbers and guess attempts. Utilizes HTML5, CSS3, Bootstrap, JavaScript, and jQuery.</p>
-            <a href="http://mchaperc.github.io/hot-cold"><img src="img/hot-cold.png" alt="Hot or Cold"></a>
           </li>
           <li>
             <h2>JavaScript Quiz:</h2>
@@ -135,50 +118,52 @@
             <img src="img/waitstaff-calc.png" alt="Waitstaff Calculator"></a>
           </li>
         </ul>
-        <h2 class="after-enrolling">After Enrollment</h2>
-        <p class="portfolio-text">This is a sampling of projects I've worked on since enrolling at <a href="http://theironyard.com" class="iron-yard">The Iron Yard</a>.</p>
+        <h2 class="after-enrolling">During The Iron Yard</h2>
+        <p class="portfolio-text">This is a sampling of projects I worked on while enrolled at <a href="http://theironyard.com" class="iron-yard">The Iron Yard</a>.</p>
         <ul class="gallery">
           <li>
             <h2>Pixel Perfect:</h2>
-              <p>This project required that I accurately replicate, to the pixel, a design that was provided. This required to the use of color grabbers, pixel measurments, etc... The end result is NOT responsive, as it was designed for a specific screen measurement. Utilizes HTML5 and CSS3.</p>
-              <a href="http://mchaperc.github.io/1.4-surf-and-paddle">
-              <img src="img/surf-and-paddle.png" alt="Surf and Paddle"></a>
-            </li>
-            <li>
-              <h2>Responsive Design:</h2>
-              <p>My first real foray into responsive design, this site was a lesson in gridded layouts and media queries while also learning our first CSS preprocessor. Utilizes HTML5, SCSS, Bourbon, Neat, JavaScript.</p>
-              <a href="http://mchaperc.github.io/2.3-sass-rwd">
-              <img src="img/responsive-design.png" alt="Responsive Design"></a>
-          </li>
-            <li>
-              <h2>Responsive Calculator:</h2>
-              <p>This assignment asked that we replicate the functionality of a calculator, but that it needed to also be responsive to screen size. Utilizes HTML5, SCSS, Bourbon, Neat, JavaScript.</p>
-              <a href="http://mchaperc.github.io/2.4-responsive-calculator">
-              <img src="img/responsive-calculator.png" alt="Responsive Calculator"></a>
+            <p>This project required that I accurately replicate, to the pixel, a design that was provided. This required to the use of color grabbers, pixel measurments, etc... The end result is NOT responsive, as it was designed for a specific screen measurement. Utilizes HTML5 and CSS3.</p>
+            <a href="http://mchaperc.github.io/1.4-surf-and-paddle">
+            <img src="img/surf-and-paddle.png" alt="Surf and Paddle"></a>
           </li>
           <li>
-              <h2>jQuery Keyboard:</h2>
-              <p>An attempt at recreating the functionality of a QWERTY keyboard through the use of jQuery keypress and click events. Utilizes HTML5, SCSS, Bourbon, Neat, JavaScript, and jQuery.</p>
-              <a href="http://mchaperc.github.io/4.3-jquery-practice">
-              <img src="img/jquery-keyboard.png" alt="jQuery Keyboard"></a>
+            <h2>Responsive Calculator:</h2>
+            <p>This assignment asked that we replicate the functionality of a calculator, but that it needed to also be responsive to screen size. Utilizes HTML5, SCSS, Bourbon, Neat, JavaScript.</p>
+            <a href="http://mchaperc.github.io/2.4-responsive-calculator">
+            <img src="img/responsive-calculator.png" alt="Responsive Calculator"></a>
           </li>
           <li>
-              <h2>CMS Blog:</h2>
-              <p>An important function of many front-end apps is CRUD functionality. This app is a custom Content Management System Blog allowing for the user to Create, Read, Update, and Delete posts. This data is persisted to a server. Utilizes HTML5, SCSS, Bourbon, Neat, JavaScript, jQuery, Underscore, and Backbone.</p>
-              <a href="http://mchaperc.github.io/6.4-full-cms-blog">
-              <img src="img/cms-blog.png" alt="CMS Blog"></a>
+            <h2>jQuery Keyboard:</h2>
+            <p>An attempt at recreating the functionality of a QWERTY keyboard through the use of jQuery keypress and click events. Utilizes HTML5, SCSS, Bourbon, Neat, JavaScript, and jQuery.</p>
+            <a href="http://mchaperc.github.io/4.3-jquery-practice">
+            <img src="img/jquery-keyboard.png" alt="jQuery Keyboard"></a>
           </li>
           <li>
-              <h2>Todo App:</h2>
-              <p>Another CRUD app, this one expands upon the previous apps functionality by integrating into it child views. This allows for each item to be manipulated apart from the others This data is persisted to a server.. Utilizes HTML5, SCSS, Bourbon, Neat, JavaScript, jQuery, Underscore, and Backbone.</p>
-              <a href="http://mchaperc.github.io/7.1-todo-app">
-              <img src="img/todo-app.png" alt="Todo App"></a>
+            <h2>CMS Blog:</h2>
+            <p>An important function of many front-end apps is CRUD functionality. This app is a custom Content Management System Blog allowing for the user to Create, Read, Update, and Delete posts. This data is persisted to a server. Utilizes HTML5, SCSS, Bourbon, Neat, JavaScript, jQuery, Underscore, and Backbone.</p>
+            <a href="http://mchaperc.github.io/6.4-full-cms-blog">
+            <img src="img/cms-blog.png" alt="CMS Blog"></a>
           </li>
           <li>
-              <h2>Restaurant Menu:</h2>
-              <p>The objective here was to create a restaurant app that allowed the user to view a menu, whose contents are received from a BAAS (Parse), add items to a virtual shopping cart, and submit orders. These orders are persisted to the server, which can be viewd in the admin portal accessible from the main page. Users can also create an account via the user page. Utilizes HTML5, SCSS, Bourbon, Neat, JavaScript, jQuery, Underscore, Backbone, and Parse.</p>
-              <a href="http://mchaperc.github.io/7.3-back-porch">
-              <img src="img/back-porch.png" alt="Back Porch"></a>
+            <h2>Final Project:</h2>
+            <p>This project was a showcase of what I'd learned and where I hope to take that knowledge. Unfortunately, in the time since my graduation last July, several of the APIs that were used have been taken down, leaving a less full experience. If you're interested in the tech used in the project, just open up your console on the landing page.</p>
+            <a href="http://mchaperc.github.io/final-project">
+            <img src="img/final-project.png" alt="Final Project"></a>
+          </li>
+        <h2 class="after-graduation">After graduation</h2>
+        <p class="portfolio-text">These applications represent work I've done outside of my day job and Software Juice, LLC in order to apply or learn new skills.</p>
+          <li>
+            <h2>Orchestra:</h2>
+            <p>My wife is an orchestra/music teacher. My wife has asked that I replicate <a href="http://colouredlines.com.au/">this design</a> for her classroom website. It also allowed me to spend some time, when I first started at BenefitFocus, learning some of the technologies I either didn't know, or wasn't yet strong with, such as: RequireJS, Marionette, LESS, and Bootstrap.</p>
+            <a href="http://mchaperc.github.io/orchestra">
+            <img src="img/orchestra.png" alt="Mrs. C's orchestra classroom website"></a>
+          </li>
+          <li>
+            <h2>Time-keeping:</h2>
+            <p>Someone at work one day suggested that we build our own internal timekeeping application and it sparked an idea for a project. I needed to get better at modular coding and reusable components, so I decided to build a dummy, but functional, app to do so (there are also sections where I'll be able to explore more data analysis and visualization at a later date). The main technologies used are: Backbone/Marionette, RequireJS, LESS, Bootstrap, and Gulp.</p>
+            <a href="http://mchaperc.github.io/timekeeping">
+            <img src="img/timekeeping.png" alt="Timekeeping application"></a>
           </li>
         </ul>
       </div>
@@ -206,7 +191,7 @@
           </li>
         </ul>
       </div>
-      <p>As I'm currently enrolled at <a class="iron-yard" href="http://theironyard.com">The Iron Yard</a>, this site and all projects are under construction. I look forward to continued growth!</p>
+      <p>Want to see more? I've got tons of projects not listed here as well as snippets on JSFiddle to demonstrate problem solving. Let's talk!</p>
     </section>
   <script src="jQuery-source/jQuery.js"></script>
   <script src="logic/button-function.js"></script>
